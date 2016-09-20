@@ -1,0 +1,50 @@
+@import "compass/css3";
+
+html,body {
+    height: 100%;
+}
+.page-wrap {
+    min-height: 100%;
+    // equal to footer height for STICKY FOOTER
+    margin-bottom: 50px; 
+}
+.hero {
+    background-image: linear-gradient(hsla(0, 0%, 100%, 0.4),hsla(0, 0%, 100%, 0.4)), url(../../assets/images/hero.jpg);
+    @include background-image((linear-gradient(hsla(0, 0%, 100%, 0.4),hsla(0, 0%, 100%, 0.4))), url(../../assets/images/hero.jpg));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    max-height: 100vh;
+    width: 100vw;
+    top: 0;
+    z-index: -1;
+    position: absolute;
+}
+
+h1 {
+    color: #000;
+    font-weight: 700;
+}
+.content {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+
+    .container {
+        height: 100%;
+
+    .row {
+        height: 100%;
+
+        .middle-content {
+            margin: auto;
+
+            p {
+              color: #000;
+            }
+        }
+    }
+    }
+}

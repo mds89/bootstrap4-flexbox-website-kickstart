@@ -1,0 +1,35 @@
+.header {
+	position: relative;
+	z-index: 99;
+
+	.brand {
+		margin-top: 20px;
+		
+		img {
+			max-height: 45px;
+		}
+	}
+
+	nav {
+		margin-top: 25px;
+
+		@include respondto(xs) {
+			display: none;
+		}
+
+		ul {
+			list-style-type: none;
+			padding-left: 0;
+
+			li {
+				display: inline;
+				padding-right: 20px;
+
+				a {
+					text-decoration: none;
+					color: #000;
+				}
+			}
+		}
+	}
+}
